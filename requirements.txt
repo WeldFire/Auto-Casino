@@ -1,0 +1,13 @@
+pytesseract
+pillow
+pyautogui
+numpy
+opencv-python-headless
+matplotlib
+transformers
+IPython
+aiohttp
+websockets
+pygame
+pandas
+Pyarrow
