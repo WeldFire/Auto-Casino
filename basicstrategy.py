@@ -21,4 +21,4 @@ def calculate_basic_strategy(player_cards, dealer_card):
 
 
 if __name__ == '__main__':
-    calculate_basic_strategy("22", "4")
+    calculate_basic_strategy("99", "A")
