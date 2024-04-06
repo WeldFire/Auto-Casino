@@ -221,10 +221,11 @@ def process_modo_blackjack_response(eventResponseParsed):
 def process_blackjack_response(eventResponseParsed, casino):
     if(casino["name"] == "chumba"):
         process_chumba_blackjack_response(eventResponseParsed)
-    if(casino["name"] == "modo"):
+    elif(casino["name"] == "modo"):
         process_modo_blackjack_response(eventResponseParsed)
     else:
         observer_gui.updateAction(f"Unknown casino provided in process_blackjack_response")
+        print(f"Faulty casino provided: {casino}")
   
 def parseCardtoScore(card):
     if card == "ONE":
